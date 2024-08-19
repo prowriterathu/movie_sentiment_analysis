@@ -29,7 +29,8 @@ def preprocess(text):
     encode = [word_idx.get(word,2)+ 3 for word in words]
     padded = sequence.pad_sequences([encode], maxlen=500)
     return padded
-
+    
+!pip install tensorflow streamlit
 import streamlit as st
 st.title('movie review Sentiment Analysis')
 st.write('enter a movie review to get sentiment analysis as postive or negetive')
