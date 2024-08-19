@@ -25,12 +25,10 @@ def decode(encode):
     return ' '.join([reverse.get(i-3, '?') for i in encode])
 #2 preprocess users input
 def preprocess(text):
-  words = text.lower().split()
-  encode = [word_idx.get(word,2)+ 3 for word in words]
-  padded = sequence.pad_sequences([encode], maxlen=500)
-  return padded
-
-
+    words = text.lower().split()
+    encode = [word_idx.get(word,2)+ 3 for word in words]
+    padded = sequence.pad_sequences([encode], maxlen=500)
+    return padded
 
 import streamlit as st
 st.title('movie review Sentiment Analysis')
