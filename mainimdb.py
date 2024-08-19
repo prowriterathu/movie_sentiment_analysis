@@ -32,7 +32,6 @@ def preprocess(text):
 
 
 
-!pip install tensorflow streamlit
 
 import streamlit as st
 st.title('movie review Sentiment Analysis')
