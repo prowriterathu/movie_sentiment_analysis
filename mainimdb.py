@@ -4,6 +4,7 @@ import numpy as np
 from tensorflow.keras.datasets import imdb
 from tensorflow.keras.preprocessing import sequence
 from tensorflow.keras.models import load_model
+@st.cache
 
 word_idx = imdb.get_word_index()
 reverse = {value : key for key, value in word_idx.items()}
