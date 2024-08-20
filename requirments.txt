@@ -2,7 +2,6 @@ streamlit
 numpy
 pandas
 matplotlib
-tensorflow
 keras
 streamlit_optiona_menu
 scikit-learn
