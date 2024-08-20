@@ -5,7 +5,7 @@ matplotlib
 keras
 streamlit_optiona_menu
 scikit-learn
-
+tensorflow
                                                                                 
 
 
